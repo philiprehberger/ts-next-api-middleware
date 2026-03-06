@@ -1,0 +1,36 @@
+{
+  "name": "@philiprehberger/next-api-middleware",
+  "version": "0.1.0",
+  "description": "Next.js API route middleware: compose, validation, CSRF protection, and security headers",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "keywords": ["next.js", "api", "middleware", "csrf", "security-headers", "validation"],
+  "author": "Philip Rehberger",
+  "license": "MIT",
+  "peerDependencies": {
+    "next": ">=13.0.0"
+  },
+  "devDependencies": {
+    "next": "^15.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
