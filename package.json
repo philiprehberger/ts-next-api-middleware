@@ -1,5 +1,5 @@
 {
-  "name": "@philiprehberger/next-api-middleware",
+  "name": "@philiprehberger/ts-next-api-middleware",
   "version": "0.2.0",
   "description": "Next.js API route middleware: compose, validation, CSRF protection, and security headers",
   "main": "./dist/index.js",
@@ -34,8 +34,8 @@
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
   },
-  "repository": { "type": "git", "url": "git+https://github.com/philiprehberger/next-api-middleware.git" },
-  "homepage": "https://github.com/philiprehberger/next-api-middleware#readme",
-  "bugs": { "url": "https://github.com/philiprehberger/next-api-middleware/issues" },
+  "repository": { "type": "git", "url": "git+https://github.com/philiprehberger/ts-next-api-middleware.git" },
+  "homepage": "https://github.com/philiprehberger/ts-next-api-middleware#readme",
+  "bugs": { "url": "https://github.com/philiprehberger/ts-next-api-middleware/issues" },
   "engines": { "node": ">=18.0.0" }
 }

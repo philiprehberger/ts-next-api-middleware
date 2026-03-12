@@ -1,11 +1,11 @@
-# @philiprehberger/next-api-middleware
+# @philiprehberger/ts-next-api-middleware
 
 Next.js API route middleware: compose, validation, CSRF protection, rate limiting, and security headers.
 
 ## Installation
 
 ```bash
-npm install @philiprehberger/next-api-middleware
+npm install @philiprehberger/ts-next-api-middleware
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install @philiprehberger/next-api-middleware
 ### Compose Middleware
 
 ```ts
-import { compose, withMethod, withValidation } from '@philiprehberger/next-api-middleware';
+import { compose, withMethod, withValidation } from '@philiprehberger/ts-next-api-middleware';
 import { z } from 'zod';
 
 const schema = z.object({ name: z.string(), email: z.string().email() });
@@ -31,7 +31,7 @@ export const POST = compose(
 ### CSRF Protection
 
 ```ts
-import { compose, csrfProtection } from '@philiprehberger/next-api-middleware';
+import { compose, csrfProtection } from '@philiprehberger/ts-next-api-middleware';
 
 export const POST = compose(
   csrfProtection({ allowedOrigins: ['https://example.com'] }),
@@ -44,7 +44,7 @@ export const POST = compose(
 ### Security Headers
 
 ```ts
-import { applySecurityHeaders } from '@philiprehberger/next-api-middleware';
+import { applySecurityHeaders } from '@philiprehberger/ts-next-api-middleware';
 import { NextResponse } from 'next/server';
 
 export function middleware(request) {
@@ -57,7 +57,7 @@ export function middleware(request) {
 ### Rate Limiting
 
 ```ts
-import { compose, rateLimit } from '@philiprehberger/next-api-middleware';
+import { compose, rateLimit } from '@philiprehberger/ts-next-api-middleware';
 
 export const GET = compose(
   rateLimit({ windowMs: 60000, maxRequests: 30 }),
