@@ -1,6 +1,6 @@
 # @philiprehberger/next-api-middleware
 
-[![CI](https://github.com/philiprehberger/next-api-middleware/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/next-api-middleware/actions/workflows/ci.yml)
+[![CI](https://github.com/philiprehberger/next-api-middleware/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/next-api-middleware/actions/workflows/publish.yml)
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/next-api-middleware.svg)](https://www.npmjs.com/package/@philiprehberger/next-api-middleware)
 [![License](https://img.shields.io/github/license/philiprehberger/next-api-middleware)](LICENSE)
 
@@ -113,6 +113,15 @@ export const GET = compose(
 
 - **Rate limiting is in-memory only** — request counts are not shared across processes or server restarts. For distributed rate limiting, use an external store like Redis.
 - **CSRF `allowedOrigins`** — when set, requests from listed origins skip token validation entirely (trusted origin bypass). Requests from other origins still require a valid CSRF token.
+
+
+## Development
+
+```bash
+npm install
+npm run build
+npm test
+```
 
 ## License
 
