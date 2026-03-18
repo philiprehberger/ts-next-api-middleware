@@ -4,7 +4,7 @@
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/next-api-middleware.svg)](https://www.npmjs.com/package/@philiprehberger/next-api-middleware)
 [![License](https://img.shields.io/github/license/philiprehberger/next-api-middleware)](LICENSE)
 
-Next.js API route middleware: compose, validation, CSRF protection, rate limiting, and security headers.
+Next.js API route middleware: compose, validation, CSRF protection, rate limiting, and security headers
 
 ## Installation
 
