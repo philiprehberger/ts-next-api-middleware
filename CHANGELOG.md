@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.8
+
+- Fix CI and License badge URLs in README
+
 ## 0.2.7
 
 - Fix test import path (dist/index.mjs → dist/index.js)
