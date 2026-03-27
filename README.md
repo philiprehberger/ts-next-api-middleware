@@ -3,6 +3,7 @@
 [![CI](https://github.com/philiprehberger/ts-next-api-middleware/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/ts-next-api-middleware/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/next-api-middleware.svg)](https://www.npmjs.com/package/@philiprehberger/next-api-middleware)
 [![License](https://img.shields.io/github/license/philiprehberger/ts-next-api-middleware)](LICENSE)
+[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
 
 Next.js API route middleware: compose, validation, CSRF protection, rate limiting, and security headers
 
