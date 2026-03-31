@@ -1,9 +1,8 @@
 # @philiprehberger/next-api-middleware
 
-[![CI](https://github.com/philiprehberger/ts-next-api-middleware/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/ts-next-api-middleware/actions/workflows/ci.yml)
+[![CI](https://github.com/philiprehberger/next-api-middleware/actions/workflows/ci.yml/badge.svg)](https://github.com/philiprehberger/next-api-middleware/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/@philiprehberger/next-api-middleware.svg)](https://www.npmjs.com/package/@philiprehberger/next-api-middleware)
-[![License](https://img.shields.io/github/license/philiprehberger/ts-next-api-middleware)](LICENSE)
-[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
+[![Last updated](https://img.shields.io/github/last-commit/philiprehberger/next-api-middleware)](https://github.com/philiprehberger/next-api-middleware/commits/main)
 
 Next.js API route middleware: compose, validation, CSRF protection, rate limiting, and security headers
 
@@ -115,7 +114,6 @@ export const GET = compose(
 - **Rate limiting is in-memory only** — request counts are not shared across processes or server restarts. For distributed rate limiting, use an external store like Redis.
 - **CSRF `allowedOrigins`** — when set, requests from listed origins skip token validation entirely (trusted origin bypass). Requests from other origins still require a valid CSRF token.
 
-
 ## Development
 
 ```bash
@@ -124,6 +122,24 @@ npm run build
 npm test
 ```
 
+## Support
+
+If you find this project useful:
+
+⭐ [Star the repo](https://github.com/philiprehberger/next-api-middleware)
+
+🐛 [Report issues](https://github.com/philiprehberger/next-api-middleware/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+
+💡 [Suggest features](https://github.com/philiprehberger/next-api-middleware/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
+
+❤️ [Sponsor development](https://github.com/sponsors/philiprehberger)
+
+🌐 [All Open Source Projects](https://philiprehberger.com/open-source-packages)
+
+💻 [GitHub Profile](https://github.com/philiprehberger)
+
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/philiprehberger)
+
 ## License
 
-MIT
+[MIT](LICENSE)
