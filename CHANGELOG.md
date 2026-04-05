@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.10
+
+- Fix README GitHub URLs to use correct repo name (ts-next-api-middleware)
+
 ## 0.2.9
 
 - Standardize README to 3-badge format with emoji Support section
