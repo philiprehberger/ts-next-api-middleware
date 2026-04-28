@@ -1,6 +1,6 @@
 {
   "name": "@philiprehberger/next-api-middleware",
-  "version": "0.2.10",
+  "version": "0.3.0",
   "description": "Next.js API route middleware: compose, validation, CSRF protection, and security headers",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -33,6 +33,7 @@
     "api",
     "middleware",
     "csrf",
+    "cors",
     "security-headers",
     "validation"
   ],

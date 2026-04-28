@@ -12,3 +12,6 @@ export { applySecurityHeaders, createSecurityHeadersConfig } from './security-he
 
 export type { RateLimitOptions } from './rate-limit';
 export { rateLimit } from './rate-limit';
+
+export type { CorsOptions } from './cors';
+export { withCors, applyCorsHeaders } from './cors';

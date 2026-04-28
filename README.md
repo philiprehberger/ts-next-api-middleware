@@ -69,6 +69,24 @@ export const GET = compose(
 );
 ```
 
+### CORS
+
+```ts
+import { compose, withCors, applyCorsHeaders } from '@philiprehberger/next-api-middleware';
+
+const cors = { origin: ['https://app.example.com'], credentials: true };
+
+export const POST = compose(
+  withCors(cors),
+  async (req) => {
+    const result = Response.json({ ok: true });
+    return applyCorsHeaders(result, req, cors);
+  },
+);
+```
+
+`withCors` short-circuits `OPTIONS` preflight with a 204 + the right headers. Use `applyCorsHeaders` to decorate the route's actual response on non-preflight requests.
+
 ## API
 
 ### Composition
@@ -108,6 +126,15 @@ export const GET = compose(
 | `rateLimit` | `(options?: RateLimitOptions) => MiddlewareHandler` | In-memory rate limiter. Returns 429 when exceeded. |
 
 **RateLimitOptions:** `windowMs` (default: 60000), `maxRequests` (default: 60), `keyGenerator` (default: x-forwarded-for), `message`.
+
+### CORS
+
+| Function | Signature | Description |
+|----------|-----------|-------------|
+| `withCors` | `(options?: CorsOptions) => MiddlewareHandler` | Handle CORS preflight (`OPTIONS`) by returning 204 with allow headers. |
+| `applyCorsHeaders` | `(response, req, options?) => Response` | Decorate a non-preflight response with CORS headers. |
+
+**CorsOptions:** `origin` (string \| string[] \| RegExp \| `(origin) => boolean` \| `'*'`, default `'*'`), `methods`, `allowedHeaders`, `exposedHeaders`, `credentials`, `maxAge`.
 
 ## Limitations
 

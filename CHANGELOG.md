@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0
+
+- Add `withCors(options)` middleware for OPTIONS preflight handling
+- Add `applyCorsHeaders(response, req, options)` helper for decorating non-preflight responses
+- Support origin matching by string, list, regex, or predicate
+- Add `keywords: cors`
+
 ## 0.2.10
 
 - Fix README GitHub URLs to use correct repo name (ts-next-api-middleware)
